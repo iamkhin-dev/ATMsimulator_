@@ -38,7 +38,7 @@ class ATM
             }
             catch (FormatException)
             {
-                Console.WriteLine("Invalid input for balance. Please enter a valid number.");
+                 throw;
             }
         }
         Console.WriteLine($"{name}, your balance of ${balance} has been successfully added.");
@@ -71,7 +71,7 @@ class ATM
         }
         catch (FormatException)
         {
-            Console.WriteLine("Invalid amount entered.");
+            throw;
         }
     }
 
@@ -93,7 +93,7 @@ class ATM
         }
         catch (FormatException)
         {
-            Console.WriteLine("Invalid amount entered.");
+             throw;
         }
     }
 
